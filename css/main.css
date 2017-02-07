@@ -1,0 +1,155 @@
+/**************
+*@1、整体通用布局
+*@2、通用组件
+*@3、头部
+*@
+*@
+ ***************/
+
+
+/*@1、整体通用组件*/
+
+.g-doc {
+    background: #fff;
+    font-family: "SimHei";
+    width: 100%;
+    min-width: 990px;
+    font-size: 14px;
+}
+
+.g-hd,
+.g-nav,
+.g-bn,
+.g-bd,
+.g-ft {
+    width: 100%;
+}
+
+.g-hd {
+    height: 180px;
+    background: yellow;
+}
+.g-nav{
+	height: 50px;
+	background: #e71e57;
+	color: #fff;
+}
+.g-in {
+    position: relative;
+    width: 990px;
+    margin: 0 auto;
+}
+
+
+/*@2、通用组件*/
+
+.f-fl {
+    float: left;
+}
+
+.f-fr {
+    float: right;
+}
+
+.f-cb {
+    clear: both;
+}
+
+
+/*面包屑*/
+
+.m-crumb {
+    overflow: hidden;
+    line-height: 1.5;
+}
+
+.m-crumb ul {
+    margin-left: -20px;
+}
+
+.m-crumb li {
+    float: left;
+    word-wrap: normal;
+    white-space: nowrap;
+}
+
+.m-crumb li:before {
+    display: inline-block;
+    width: 20px;
+    text-align: center;
+    content: '/';
+    font-size: 14px;
+    color: #000;
+    /*font-family: \5b8b\4f53;*/
+}
+
+/*导航*/
+.m-nav{
+	width: 100%;
+	font-size: 14px;
+	color: #fff;
+	line-height: 50px;
+	height: 50px;
+
+}
+.m-nav li{
+	float: left;
+}
+.m-nav li:last-child a{
+	border:none;
+}
+.m-nav a{
+	font-size: 15px;
+    padding: 0 25px;
+    color: #fff;
+    border-right: 1px solid #b8a6a6;
+}
+
+/*@3、头部*/
+
+.g-hd-ln1 {
+    padding: 10px 0;
+}
+
+.g-hd-ln1 .m-crumb {
+    margin-right: 50px;
+}
+
+.g-hd-ln2-r {
+ margin-top: 30px;
+}
+
+.g-hd-ln2-r img {
+    margin: 16px;
+    width: 52px;
+    height: 52px;
+}
+
+.g-hd-ln2-r dl {
+    line-height: 28px;
+}
+
+.g-hd-ln2-r dt {
+    font-size: 20px;
+}
+
+.g-hd-ln2-r dd {
+    font-size: 30px;
+    font-weight: 600;
+}
+.g-hd-ln2-l {
+margin-top: 10px;
+}
+.g-hd-ln2-l a{
+	    margin: 0px 6px;
+}
+.g-hd-ln2-l dl{
+    line-height: 26px;
+    margin-top: 36px;
+}
+.g-hd-ln2-l dt{
+font-size: 24px;
+}
+.g-hd-ln2-l dd{
+font-size: 12px;
+}
