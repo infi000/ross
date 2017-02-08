@@ -2,19 +2,19 @@
 *@1、整体通用布局
 *@2、通用组件
 *@3、头部
-*@
-*@
+*@4、banner
+*@5、主体
  ***************/
 
 
 /*@1、整体通用组件*/
 
 .g-doc {
-    background: #fff;
-    font-family: "SimHei";
+    font-family: 'SimHei';
+    font-size: 14px;
     width: 100%;
     min-width: 990px;
-    font-size: 14px;
+    background: #fff;
 }
 
 .g-hd,
@@ -27,13 +27,20 @@
 
 .g-hd {
     height: 180px;
-    background: yellow;
 }
-.g-nav{
-	height: 50px;
-	background: #e71e57;
-	color: #fff;
+
+.g-nav {
+    height: 50px;
+    color: #fff;
+    background: #e71e57;
 }
+
+.g-bn {
+    position: relative;
+    width: 100%;
+    height: 402px;
+}
+
 .g-in {
     position: relative;
     width: 990px;
@@ -59,8 +66,8 @@
 /*面包屑*/
 
 .m-crumb {
-    overflow: hidden;
     line-height: 1.5;
+    overflow: hidden;
 }
 
 .m-crumb ul {
@@ -69,60 +76,82 @@
 
 .m-crumb li {
     float: left;
-    word-wrap: normal;
     white-space: nowrap;
+    word-wrap: normal;
 }
 
 .m-crumb li:before {
+    font-size: 14px;
     display: inline-block;
     width: 20px;
-    text-align: center;
     content: '/';
-    font-size: 14px;
+    text-align: center;
     color: #000;
     /*font-family: \5b8b\4f53;*/
 }
 
-/*导航*/
-.m-nav{
-	width: 100%;
-	font-size: 14px;
-	color: #fff;
-	line-height: 50px;
-	height: 50px;
 
-}
-.m-nav li{
-	float: left;
-}
-.m-nav li:last-child a{
-	border:none;
-}
-.m-nav a{
-	font-size: 15px;
-    padding: 0 25px;
+/*导航*/
+
+.m-nav {
+    font-size: 14px;
+    line-height: 50px;
+    width: 100%;
+    height: 50px;
     color: #fff;
+}
+
+.m-nav li {
+    float: left;
+}
+
+.m-nav li:last-child a {
+    border: none;
+}
+
+.m-nav a {
+    font-size: 15px;
+    padding: 0 25px;
+    color: #ffc6d4;
     border-right: 1px solid #b8a6a6;
 }
+
+.m-nav a:hover {
+    color: #fff;
+}
+
+
+/*箭头*/
+
+.u-arr-l,
+.u-arr-r {
+    width: 48px;
+}
+
 
 /*@3、头部*/
 
 .g-hd-ln1 {
-    padding: 10px 0;
+    padding: 10px;
 }
 
-.g-hd-ln1 .m-crumb {
-    margin-right: 50px;
+.g-hd-ln1 .m-crumb a {
+    color: #000;
+}
+
+.g-hd-ln1 .m-crumb a:hover {
+    color: #b6b6b6;
 }
 
 .g-hd-ln2-r {
- margin-top: 30px;
+    margin-top: 30px;
+    margin-right: 14px;
 }
 
 .g-hd-ln2-r img {
-    margin: 16px;
     width: 52px;
     height: 52px;
+    margin: 16px;
 }
 
 .g-hd-ln2-r dl {
@@ -137,19 +166,270 @@
     font-size: 30px;
     font-weight: 600;
 }
+
 .g-hd-ln2-l {
-margin-top: 10px;
+    margin-top: 10px;
 }
-.g-hd-ln2-l a{
-	    margin: 0px 6px;
+
+.g-hd-ln2-l a {
+    margin: 0 6px;
 }
-.g-hd-ln2-l dl{
+
+.g-hd-ln2-l dl {
     line-height: 26px;
     margin-top: 36px;
 }
-.g-hd-ln2-l dt{
-font-size: 24px;
+
+.g-hd-ln2-l dt {
+    font-size: 24px;
 }
-.g-hd-ln2-l dd{
-font-size: 12px;
+
+.g-hd-ln2-l dd {
+    font-size: 12px;
+}
+
+
+/*@4、banner图*/
+
+.g-bn .swiper-container-1,
+.g-bn .swiper-container-1 .swiper-slide {
+    width: 100%;
+    height: 100%;
+}
+
+.s-bn-1-1 {
+    background: url(../img/banner1.jpg) center;
+}
+
+.s-bn-1-2 {
+    background: url(../img/banner2.jpg) center;
+}
+
+.s-bn-1-3 {
+    background: url(../img/banner3.jpg) center;
+}
+
+
+/*@5、主体*/
+
+
+/*g-bd-ln1*/
+
+.g-bd-ln1 {
+    height: 140px;
+    /*background: yellow;*/
+}
+
+.g-bd-ln1 img.f-fl {
+    position: relative;
+    top: 30px;
+}
+
+.g-bd-ln1 dl {
+    margin: 45px 9px;
+}
+
+.g-bd-ln1 dt {
+    font-size: 24px;
+    color: #595757;
+}
+
+.g-bd-ln1 dd {
+    font-size: 11px;
+    color: #595757;
+}
+
+.g-bd-ln1 .u-arr-l,
+.g-bd-ln1 .u-arr-r {
+    margin-top: 50px;
+}
+
+.swiper-container-2 {
+    width: 702px;
+    height: 140px;
+    padding: 20px 0;
+}
+
+.swiper-container-2 .swiper-slide img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    box-shadow: 1px 2px 0 1px #b7b7b7;
+}
+
+
+/*g-bd-ln2*/
+
+.g-bd-ln2 {
+    height: 420px;
+    background: #efeff0;
+}
+
+.g-bd-ln2 .g-in {
+    height: 100%;
+    background: url(../img/bg1.jpg) center;
+}
+
+.g-bd-ln2 img {
+    margin-left: 120px;
+}
+
+.g-bd-ln2 dl {
+    line-height: 53px;
+    margin-top: 31px;
+    margin-left: 140px;
+}
+
+.g-bd-ln2 dl dt {
+    font-size: 34px;
+    margin-bottom: 20px;
+    margin-left: -70px;
+    color: #ff005a;
+}
+
+.g-bd-ln2 dd {
+    font-size: 17px;
+    color: #fff;
+}
+
+
+/*g-bd-ln3*/
+
+.g-bd-ln3 {
+    height: 690px;
+}
+
+.g-bd-ln3-1 {
+    margin: 24px auto;
+    width: 490px;
+    height: 110px;
+    /*background: cornflowerblue;*/
+}
+
+.g-bd-ln3-1 img {
+    margin: 10px;
+}
+
+.g-bd-ln3-1 dl {
+    margin-left: 6px;
+    margin-top: 12px;
+}
+
+.g-bd-ln3-1 dt {
+    font-size: 48px;
+    color: #ff005a;
+}
+
+.g-bd-ln3-1 dd {
+    font-size: 24px;
+    color: #595757;
+}
+
+.g-bd-ln3-2 ul {
+    width: 204px;
+}
+
+.g-bd-ln3-2 ul li {
+    margin-bottom: 35px;
+}
+
+.g-bd-ln3-2 ul .u-arr-l {
+    width: 26px;
+    position: relative;
+    top: -48px;
+}
+
+.g-bd-ln3-2 ul dl {
+    width: 170px;
+    display: inline-block;
+    line-height: 24px;
+}
+
+.g-bd-ln3-2 ul dt {
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: #ff005a;
+    margin-bottom: 13px;
+    text-align: center;
+}
+
+.g-bd-ln3-2 ul dd {
+    font-size: 14px;
+    text-indent: 1.5em;
+    color: #595757;
+}
+
+
+/*g-bd-ln4*/
+.g-bd-ln4{
+    height: 456px;
+ background: #efeff0;
+}
+.g-bd-ln4-1 {
+    margin: 24px auto 0;
+    width: 380px;
+    height: 110px;
+}
+
+.g-bd-ln4-1 img {
+    margin: 10px;
+}
+
+.g-bd-ln4-1 dl {
+    margin-left: 6px;
+    margin-top: 12px;
+    text-align: center;
+}
+
+.g-bd-ln4-1 dt {
+    font-size: 48px;
+    color: #ff005a;
+}
+
+.g-bd-ln4-1 dd {
+    font-size: 24px;
+    color: #595757;
+}
+
+.g-bd-ln4-2 {
+    text-align: center;
+}
+.g-bd-ln4-3 ul li{
+     float: left;
+    width: 150px;
+    font-size: 14px;
+       color: #595757;
+    margin: 10px 0 0 146px;
+    line-height: 20px;
+    text-indent: 1.5em;
+}
+.g-bd-ln4-3 ul li:first-child{
+    margin-left: 136px;
+}
+/*g-bd-ln5*/
+.g-bd-ln5-1 {
+    margin: 24px auto 0;
+    width: 780px;
+    height: 110px;
+    background: yellow;
+}
+
+.g-bd-ln5-1 img {
+    margin: 10px;
+}
+
+.g-bd-ln5-1 dl {
+    margin-left: 6px;
+    margin-top: 12px;
+    text-align: center;
+}
+
+.g-bd-ln5-1 dt {
+    font-size: 48px;
+    color: #ff005a;
+}
+
+.g-bd-ln5-1 dd {
+    font-size: 24px;
+    color: #595757;
 }
