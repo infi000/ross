@@ -28,8 +28,8 @@
                     <div class="f-fr">
                         <nav class="m-crumb">
                             <ul>
-                                <li><a href="#">设为首页</a></li>
-                                <li><a href="#">加入收藏</a></li>
+                                <li><a href="javascript:void(0);" onclick="SetHome(this,'http://www.xyz.com');">设为首页</a></li>
+                                <li><a href="javascript:void(0);" onclick="AddFavorite('罗斯麦瑞',location.href)">加入收藏</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -305,6 +305,7 @@
     </div>
 </body>
 <script src="./lib/idangerous.swiper.min.js"></script>
+<script src="./js/main.js"></script>
 <script>
 var swiper = new Swiper('.swiper-container-1', {
     pagination: '.swiper-pagination',
