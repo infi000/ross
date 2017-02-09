@@ -7,10 +7,11 @@
     <meta name="keywords" content="" />
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/main.css" />
+    <link rel="icon" type="image/x-icon" href="./img/logo3.png">
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/main.css" />
     <!-- <link rel="stylesheet" href="lib/font-awesome.min.css"> -->
-    <link rel="stylesheet" href="lib/idangerous.swiper.css">
+    <link rel="stylesheet" href="./lib/idangerous.swiper.css">
     <!-- <link rel="stylesheet" href="lib/animation.css"> -->
     <script src="./lib/jquery.min.js"></script>
 </head>
@@ -59,13 +60,13 @@
             <div class="g-in">
                 <div class="m-nav">
                     <ul>
-                        <li><a href="#">首页</a></li>
-                        <li><a href="#">公司介绍</a></li>
-                        <li><a href="#">OEM加工</a></li>
+                        <li><a href="./index.html" class="s-active">首页</a></li>
+                        <li><a href="./template/intro.html">公司介绍</a></li>
+                        <li><a href="#OEM">OEM加工</a></li>
                         <li><a href="#">研究与开发</a></li>
                         <li><a href="#">企业视频</a></li>
                         <li><a href="#">产品备案</a></li>
-                        <li><a href="#">厂部实景</a></li>
+                        <li><a href="./template/factory.html">厂部实景</a></li>
                         <li><a href="#">新闻资讯</a></li>
                         <li><a href="#">联系我们</a></li>
                     </ul>
@@ -179,14 +180,14 @@
                     <div class="g-bd-ln4-3">
                         <ul>
                             <li>规模化采购、具备产品生产成本优势以及技术研发优势降低品牌商生产总成本。</li>
-                            <li>3年行业大数据积累，比客户更懂客户，通过对护肤品市场数据，协助客户在市场中取得成功。</li>
-                            <li>企业格局，完善的产业布局，把握全球护肤品行业风向标及行业趋势，源源不断提供有市场有市场的新配方。</li>
+                            <li>13年行业大数据积累，比客户更懂客户，通过对护肤品市场数据，协助客户在市场中取得成功。</li>
+                            <li>大企业格局，完善的产业布局，把握全球护肤品行业风向标及行业趋势，源源不断提供有市场有市场的新配方。</li>
                         </ul>
                     </div>
                 </div>
             </div>
             <div class="g-in">
-                <div class="g-bd-ln5">
+                <div class="g-bd-ln5" id="OEM">
                     <div class="g-bd-ln5-1">
                         <img src="./img/tag5.png" alt="">
                         <dl>
@@ -263,7 +264,7 @@
                 </div>
                 <div class="f-fr">
                     <dl>
-                        <dt>四川罗斯麦瑞生物科技有限公司   版权所有</dt>
+                        <dt>四川罗斯麦瑞生物科技有限公司 版权所有</dt>
                         <dd><img src="./img/tool1.png" alt="" class="f-fl">咨询电话：400-6767-968</dd>
                         <dd><img src="./img/tool2.png" alt="" class="f-fl">地&nbsp;&nbsp;&nbsp;&nbsp;址：四川省仁寿视高工业园</dd>
                         <dd><img src="./img/tool3.png" alt="" class="f-fl">传&nbsp;&nbsp;&nbsp;&nbsp;真：85356028</dd>
@@ -272,9 +273,38 @@
             </div>
         </div>
         <!-- 底部/ -->
+        <!-- 在线咨询 -->
+        <div class="m-advisory">
+            <ul>
+                <li>
+                    <a href="tencent://message/?uin=545146329&Site=www.luoxiao123.cn&Menu=yes"><img src="./img/advisory2.png" alt=""><span>QQ咨询1</span></a>
+                </li>
+                <li>
+                    <a href="tencent://message/?uin=545146329&Site=www.luoxiao123.cn&Menu=yes"><img src="./img/advisory2.png" alt=""><span>QQ咨询2</span></a>
+                </li>
+                <li>
+                    <div class="m-advisory-hidden">
+                        <p>400-6767-968</p>
+                        <div class="m-arrR"></div>
+                    </div>
+                    <img src="./img/advisory1.png" alt=""><span>电话咨询</span>
+                </li>
+                <li>
+                    <div class="m-advisory-hidden f-p10">
+                        <dl>
+                            <dt><img src="./img/qr.png" alt=""></dt>
+                            <dd><i>扫一扫，关注我们</i></dd>
+                        </dl>
+                        <div class="m-arrR"></div>
+                    </div>
+                    <img src="./img/advisory3.png" alt=""><span>微信咨询</span></li>
+                <li><img src="./img/advisory4.png" alt=""><a href="#">返回<br>顶部</a></li>
+            </ul>
+        </div>
+        <!-- 在线咨询/ -->
     </div>
 </body>
-<script src="lib/idangerous.swiper.min.js"></script>
+<script src="./lib/idangerous.swiper.min.js"></script>
 <script>
 var swiper = new Swiper('.swiper-container-1', {
     pagination: '.swiper-pagination',
@@ -282,13 +312,11 @@ var swiper = new Swiper('.swiper-container-1', {
     paginationClickable: true,
     spaceBetween: 0,
     loop: true,
-    autoplay: 3500,
+    autoplay: 6000,
     autoplayDisableOnInteraction: false
 });
 var swiper2 = new Swiper(".swiper-container-2", {
-    // pagination: '.pagination',
-    // paginationClickable: true,
-    // autoplay: 3000,
+    autoplay: 8000,
     slidesPerView: 6,
     loop: true
 });

@@ -5,6 +5,8 @@
 *@4、banner
 *@5、主体
 *@6、页脚
+*@7、公司介绍
+*@8、工厂实景
  ***************/
 
 
@@ -44,7 +46,7 @@
 
 .g-ft {
     height: 234px;
-      background: #e71e57;
+    background: #e71e57;
     width: 100%;
 }
 
@@ -53,10 +55,11 @@
     width: 990px;
     margin: 0 auto;
 }
+
 .g-in2 {
-	position: relative;
-	width: 558px;
-	margin: 0 auto;
+    position: relative;
+    width: 558px;
+    margin: 0 auto;
 }
 
 
@@ -73,7 +76,9 @@
 .f-cb {
     clear: both;
 }
-
+.f-mr0{
+    margin-right: 0!important;
+}
 
 /*面包屑*/
 
@@ -123,12 +128,16 @@
 
 .m-nav a {
     font-size: 15px;
-    padding: 0 25px;
+    padding: 0 23px;
     color: #ffc6d4;
     border-right: 1px solid #b8a6a6;
 }
 
 .m-nav a:hover {
+    color: #fff;
+}
+
+.m-nav .s-active {
     color: #fff;
 }
 
@@ -138,6 +147,92 @@
 .u-arr-l,
 .u-arr-r {
     width: 48px;
+}
+/*在线咨询*/
+.m-advisory {
+    position: fixed;
+    z-index: 100000;
+    top: 200px;
+    right: 0;
+}
+
+.m-advisory-hidden {
+    position: absolute;
+    top: 17px;
+    right: 96px;
+    display: none;
+    box-sizing: border-box;
+    border: 1px solid #eee;
+    background: #fbf9fa;
+}
+
+.m-advisory-hidden .m-arrR {
+    position: absolute;
+    top: 17px;
+    right: -7px;
+    width: 8px;
+    height: 13px;
+}
+
+.m-advisory-hidden p {
+    font-size: 16px;
+    line-height: 45px;
+    width: 135px;
+    height: 45px;
+    color: #f39800;
+}
+
+.m-advisory-hidden img {
+    width: 110px;
+}
+
+.m-advisory-hidden i {
+    font-size: 10px;
+    color: #333;
+}
+
+.m-advisory ul li {
+    position: relative;
+    box-sizing: border-box;
+    width: 86px;
+    height: 76px;
+    margin-bottom: 2px;
+    padding-top: 13px;
+    cursor: pointer;
+    text-align: center;
+    color: #fff;
+    background: #999;
+}
+.m-advisory ul li span{
+    color: #fff;
+}
+
+.m-advisory ul li img {
+    display: block;
+    margin: 0 auto 5px;
+}
+
+.m-advisory ul li:last-child a {
+    display: none;
+}
+
+.m-advisory ul li:hover {
+    background: #ff005a;
+}
+
+.m-advisory ul li:hover .m-advisory-hidden {
+    display: block;
+}
+
+.m-advisory ul li:last-child:hover a {
+    font-size: 20px;
+    display: block;
+    height: 100%;
+    color: #fff;
+}
+
+.m-advisory ul li:last-child:hover img {
+    display: none;
 }
 
 
@@ -312,8 +407,8 @@
 }
 
 .g-bd-ln3-1 {
-   padding-top: 24px;
-       margin-bottom: 24px;
+    padding-top: 24px;
+    margin-bottom: 24px;
     width: 100%;
     height: 110px;
     position: relative;
@@ -321,12 +416,10 @@
 }
 
 .g-bd-ln3-1 img {
-	position:absolute;
-	top: 18px;
-	left: 225px;
-
+    position: absolute;
+    top: 18px;
+    left: 225px;
 }
-
 
 .g-bd-ln3-1 dt {
     font-size: 48px;
@@ -382,19 +475,18 @@
 
 .g-bd-ln4-1 {
     padding-top: 24px;
-        margin-bottom: 24px;
+    margin-bottom: 24px;
     width: 100%;
     height: 110px;
     position: relative;
-      text-align: center;
+    text-align: center;
 }
 
 .g-bd-ln4-1 img {
-   position: absolute;
-   right: 264px;
-   top: 30px;
+    position: absolute;
+    right: 264px;
+    top: 30px;
 }
-
 
 .g-bd-ln4-1 dt {
     font-size: 48px;
@@ -437,9 +529,9 @@
 }
 
 .g-bd-ln5-1 img {
-   position: absolute;
-   left: 66px;
-   top: 42px;
+    position: absolute;
+    left: 66px;
+    top: 42px;
 }
 
 .g-bd-ln5-1 dl {
@@ -491,89 +583,180 @@
     color: #fff;
 }
 
-.g-bd-ln5-2 dd a:hover{
-	 color: #b6b6b6;
+.g-bd-ln5-2 dd a:hover {
+    color: #b6b6b6;
 }
+
 .g-bd-ln5-dl1 {
     top: 24px;
     left: 134px;
 }
-.g-bd-ln5-dl2{
-	top:24px;
-	    right: 60px;
+
+.g-bd-ln5-dl2 {
+    top: 24px;
+    right: 60px;
 }
+
+
 /*g-bd-ln6*/
-.g-bd-ln6{
-	background: #efeff0;
-	height: 246px;
+
+.g-bd-ln6 {
+    background: #efeff0;
+    height: 246px;
 }
-.g-bd-ln6-1{
-	line-height: 126px;
-	font-size: 48px;
-	position: relative;
-	text-align: center;
+
+.g-bd-ln6-1 {
+    line-height: 126px;
+    font-size: 48px;
+    position: relative;
+    text-align: center;
 }
-.g-bd-ln6-1 img{
-	position: absolute;
-	right: 100px;
-	top: 24px;
+
+.g-bd-ln6-1 img {
+    position: absolute;
+    right: 100px;
+    top: 24px;
 }
+
+
 /*g-bd-ln7*/
-.g-bd-ln7{
-	padding-top: 44px;
-	height: 398px;
+
+.g-bd-ln7 {
+    padding-top: 44px;
+    height: 398px;
 }
-.g-bd-ln7 .f-fr{
-	width: 680px;
-	
+
+.g-bd-ln7 .f-fr {
+    width: 680px;
 }
-.g-bd-ln7 .f-fr dt{
-	font-size: 48px;
-	   color: #ff005a;
-	   text-align: right;
+
+.g-bd-ln7 .f-fr dt {
+    font-size: 48px;
+    color: #ff005a;
+    text-align: right;
 }
-.g-bd-ln7 .f-fr dd{
-	font-size: 14px;
-	line-height: 24px;
-	text-indent: 1.5em;
-	    margin: 14px 0px;
+
+.g-bd-ln7 .f-fr dd {
+    font-size: 14px;
+    line-height: 24px;
+    text-indent: 1.5em;
+    margin: 14px 0px;
 }
+
+
 /*g-bd-ln8*/
-.g-bd-ln8{
-	height: 350px;
-	    padding-top: 34px;
-  background: #efeff0;
-}
-.g-bd-ln8 .f-fl{
-	width: 838px;
 
+.g-bd-ln8 {
+    height: 350px;
+    padding-top: 34px;
+    background: #efeff0;
 }
-.g-bd-ln8 dl{
-	width: 100%;
 
+.g-bd-ln8 .f-fl {
+    width: 838px;
 }
-.g-bd-ln8 dt{
-	font-size: 48px;
-	 color: #ff005a;
-	text-align: left;
-	    margin-bottom: 34px;
+
+.g-bd-ln8 dl {
+    width: 100%;
 }
-.g-bd-ln8 ul li{
+
+.g-bd-ln8 dt {
+    font-size: 48px;
+    color: #ff005a;
+    text-align: left;
+    margin-bottom: 34px;
+}
+
+.g-bd-ln8 ul li {
     float: left;
     margin-right: 15px;
 }
-/*@页脚*/
-.g-ft .g-in2{
-	padding-top: 44px;
+
+
+/*@6页脚*/
+
+.g-ft .g-in2 {
+    padding-top: 44px;
 }
-.g-ft dl{
-	font-size: 18px;
-	color: #fff;
+
+.g-ft dl {
+    font-size: 18px;
+    color: #fff;
 }
-.g-ft dd{
+
+.g-ft dd {
     margin-top: 12px;
     line-height: 29px;
 }
-.g-ft dd img{
-	margin-right: 10px;
+
+.g-ft dd img {
+    margin-right: 10px;
+}
+
+
+/*@7、公司介绍*/
+
+.g-intro-1 {
+    height: 550px;
+    padding-top: 10px;
+}
+
+.g-intro-1 dl {
+    box-sizing: border-box;
+    width: 364px;
+    padding: 0 14px;
+}
+
+.g-intro-1 dt {
+    font-size: 36px;
+    color: #e51e56;
+    text-align: center;
+    margin: 30px 0;
+}
+
+.g-intro-1 dd {
+    text-indent: 1.5em;
+    font-size: 20px;
+    line-height: 36px;
+    color: #595959;
+}
+
+.g-intro-2 img {
+    margin-right: 16px;
+    margin-bottom: 16px;
+}
+
+
+
+
+/*@8、工厂实景*/
+
+.g-factory-1 {
+    background: #efeff0;
+}
+.g-factory-2 {
+    padding-top: 10px;
+}
+.g-factory-2 dl{
+    width: 606px;
+    box-sizing: border-box;
+}
+
+.g-factory-2 dt {
+    font-size: 36px;
+    color: #e51e56;
+    text-align: center;
+    margin: 30px 0;
+}
+
+.g-factory-2 dd {
+    text-indent: 1.5em;
+    font-size: 20px;
+    line-height: 36px;
+    color: #595959;
+}
+.g-factory-3 img{
+    margin-right: 14px;
+        margin-bottom: 16px;
+        margin-top: 16px;
 }
