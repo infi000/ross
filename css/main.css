@@ -869,22 +869,74 @@
 
 /*@10、研究与开发*/
 
-.g-research-2 img{
+.g-research-2 img {
     width: 320px;
     height: 270px;
     margin-right: 8px;
     margin-bottom: 8px;
     float: left;
 }
-.g-research-2 p{
+
+.g-research-2 p {
     margin: 20px 0;
-    padding:0 80px;
-      line-height: 36px;
+    padding: 0 80px;
+    line-height: 36px;
     color: #727171;
-       font-size: 20px;
+    font-size: 20px;
 }
 
+
 /*@11、合作商家*/
-.g-cooperation-2{
-    
+
+.g-cooper-2 {}
+
+.g-cooper-2 h2 {
+    color: #464646;
+    font-size: 36px;
+    text-align: center;
+}
+
+.g-cooper-tt {
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+}
+
+.g-cooper-tt-line {
+    height: 2px;
+    width: 100%;
+    background: #dc3a5c;
+    position: relative;
+    top: 50px;
+}
+
+.g-cooper-tt span {
+    background: #fff;
+    color: #dc3a5c;
+    font-size: 36px;
+    position: relative;
+    padding: 0 10px;
+}
+.g-cooper-2-1{
+    margin-bottom: 50px;
+}
+.g-cooper-2-1 div{
+    width: 230px;
+    height: 320px;
+    float: left;
+    position: relative;
+    display: inline-block;
+    margin-right: 16px;
+}
+.g-cooper-2-1 img{
+    width: 220px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left:0;
+    bottom: 0;
+    margin: auto;
+}
+.g-cooper-2-1 img:hover{
+    box-shadow: 2px 2px 4px 0px #ccc;
 }
