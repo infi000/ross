@@ -10,6 +10,9 @@
 *@9、oem加工
 *@10、研究与开发
 *@11、合作商家
+*@12、产品备案
+*@13、新闻资讯
+*@14、联系我们
  ***************/
 
 
@@ -897,8 +900,8 @@
 }
 
 .g-cooper-tt {
-    height: 100px;
-    line-height: 100px;
+    height: 50px;
+    line-height: 50px;
     text-align: center;
 }
 
@@ -907,7 +910,7 @@
     width: 100%;
     background: #dc3a5c;
     position: relative;
-    top: 50px;
+    top: 25px;
 }
 
 .g-cooper-tt span {
@@ -939,4 +942,65 @@
 }
 .g-cooper-2-1 img:hover{
     box-shadow: 2px 2px 4px 0px #ccc;
+}
+.g-cooper-2-2{
+     padding-top: 30px;
+
+    margin-bottom: 30px;
+}
+/*@12、产品备案*/
+
+.g-filing h2{
+    font-size: 35px;
+    color: #727171;
+    text-align: center;
+    padding: 50px 0;
+}
+.g-filing p{
+    font-size: 24px;
+     color: #727171;
+     line-height: 36px;
+     height: 500px;
+
+}
+/*@13、新闻资讯*/
+.g-news h2{
+   font-size: 35px;
+    color: #727171;
+    padding: 50px 0;
+}
+.g-news p{
+        font-size: 24px;
+     color: #727171;
+     line-height: 66px;
+     height: 500px;
+}
+
+/*@14、联系我们*/
+.g-cont-1 .g-in {
+    width: 1200px;
+    height: 276px;
+    background: url(../img/contbanner.jpg) center;
+}
+.g-cont-2 {
+    padding: 50px 0;
+}
+.g-cont-2 h2 {
+    color: #464646;
+    font-size: 36px;
+    text-align: center;
+}
+.g-cont-2 dl{
+    text-align: center;padding: 60px 0;
+}
+.g-cont-2 dt{
+      color: #595757;
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+.g-cont-2 dd{
+    color:#595757;
+    font-size: 30px;
+    line-height: 48px;
+
 }
