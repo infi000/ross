@@ -30,11 +30,11 @@ function AddFavorite(title, url) {
 };
 var ws;
 //webSoket
-function Socket(){
+function Socket($opt){
         if ("WebSocket" in window){
             console.log("您的浏览器支持 WebSocket!");
             // 打开一个 web socket
-            ws = new WebSocket("ws://103.243.25.218:9010/ajaxchattest");
+            ws = new WebSocket($opt);
 
             ws.onopen = function()
             {
@@ -57,21 +57,29 @@ function Socket(){
         }
 };
 $(document).ready(function(){
-
-    Socket()
-    $("#sentNum").on("click",function(){
-        var num=$("#inputNum").val();
-        if(ws.readyState==3){
-            alert("您已经提交过了号码")
-        }else{
-                if(num!=""){
-                ws.send(num);
-            }else{
-                alert("请填写正确号码");
-            } 
-        }
+    $.ajax({
+        url:"http://127.0.0.1:3000/get",
+        type:"GET",
+        success:function(data){
+            console.log(data);
+             Socket(JSON.parse(data).ip);
+                 $("#sentNum").on("click",function(){
+                var num=$("#inputNum").val();
+                if(ws.readyState==3){
+                    alert("您已经提交过了号码")
+                }else{
+                        if(num!=""){
+                        ws.send(num);
+                    }else{
+                        alert("请填写正确号码");
+                    } 
+                }
        
     })
+
+        }
+    })
+   
 });
 
 
