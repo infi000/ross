@@ -27,4 +27,54 @@ function AddFavorite(title, url) {
             alert("抱歉，您所使用的浏览器无法完成此操作。\n\n加入收藏失败，请使用Ctrl+D进行添加");
         }
     }
-}
+};
+var ws;
+//webSoket
+function Socket(){
+        if ("WebSocket" in window){
+            console.log("您的浏览器支持 WebSocket!");
+            // 打开一个 web socket
+            ws = new WebSocket("ws://103.243.25.218:9010/ajaxchattest");
+
+            ws.onopen = function()
+            {
+              // Web Socket 已连接上，使用 send() 方法发送数据
+            };
+            ws.onmessage = function (evt) 
+            { 
+                console.log(evt.data);
+              alert("您的号码已接受,稍后我们将给您回电！");
+              ws.close();
+            };
+            ws.onclose = function()
+            { 
+              // 关闭 websocket
+              console.log("连接已关闭..."); 
+            };
+        }else{
+            // 浏览器不支持 WebSocket
+            console.log("您的浏览器不支持 WebSocket!");
+        }
+};
+$(document).ready(function(){
+
+    Socket()
+    $("#sentNum").on("click",function(){
+        var num=$("#inputNum").val();
+        if(ws.readyState==3){
+            alert("您已经提交过了号码")
+        }else{
+                if(num!=""){
+                ws.send(num);
+            }else{
+                alert("请填写正确号码");
+            } 
+        }
+       
+    })
+});
+
+
+
+
+
