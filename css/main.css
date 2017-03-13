@@ -788,12 +788,14 @@
 }
 
 .g-ft-2-3 p {
-    font-size: 18px;
-    color: #fff;
+       font-size: 13px;
+    color: #ccc;
     text-align: center;
 }
 
-
+.g-ft-2-3 p i{
+    color: #fff;
+}
 /*@7、公司介绍*/
 
 .g-intro-1 {
