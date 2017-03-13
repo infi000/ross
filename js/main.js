@@ -39,6 +39,7 @@ function Socket($opt){
             ws.onopen = function()
             {
               // Web Socket 已连接上，使用 send() 方法发送数据
+              console.log("链接成功")
             };
             ws.onmessage = function (evt) 
             { 
